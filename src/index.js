@@ -1,5 +1,5 @@
 import path from 'path';
-// import './tufte.css';
+import './tufte.css';
 
 console.log('Jellow World from front-end repo');
 function component() {
