@@ -60,4 +60,4 @@ typings/
 # PyCharm
 .idea*
 
-dest/
+dist/
