@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "prebuild": "npm run clean-dist",
+    "clean-dist": "rimraf ./dist && mkdir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/mikesnow79/play-blog-front-end#readme",
   "devDependencies": {
     "path": "^0.12.7",
+    "rimraf": "^2.6.2",
     "webpack": "^3.10.0"
   }
 }
