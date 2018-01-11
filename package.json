@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "npm run build -- --watch",
     "build": "webpack",
     "prebuild": "npm run clean-dist",
     "clean-dist": "rimraf ./dist && mkdir dist",
