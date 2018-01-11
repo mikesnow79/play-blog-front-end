@@ -11,8 +11,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
-          'css-loader'
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+            }
+          },
         ]
       },
       {
@@ -31,7 +37,8 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: "[name].[ext]",
-            // useRelativePath: true
+            url: false,
+            publicPath: '/static/'
           }
         }
       },
