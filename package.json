@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/mikesnow79/play-blog-front-end#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^0.28.8",
     "file-loader": "^1.1.6",
     "path": "^0.12.7",
