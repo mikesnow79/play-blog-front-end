@@ -18,9 +18,9 @@ function component() {
 document.body.appendChild(component());
 
 // render(
-  {/*<AppContainer>*/}
-  //
-  // </AppContainer>,
-  // document.getElementById('main-container')
+//   <AppContainer>
+//
+//   </AppContainer>,
+//   document.getElementById('main-container')
 // );
 
