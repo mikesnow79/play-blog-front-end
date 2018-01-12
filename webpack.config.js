@@ -18,6 +18,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
+              sourceMap: true
             }
           },
         ]
@@ -45,7 +46,7 @@ module.exports = {
         }
       },
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
