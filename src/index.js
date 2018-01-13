@@ -1,4 +1,3 @@
-import path from 'path';
 import './tufte.css';
 import './jim_brown.jpeg';
 // import React from 'react';

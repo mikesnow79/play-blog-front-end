@@ -9,6 +9,8 @@
     "prebuild": "npm run clean-dist",
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
+    "lint": "esw webpack.config.* src tools --color",
+    "lint:watch": "npm run lint -- --watch",
     "test": "jest",
     "test:cover": "npm run test -- --coverage ",
     "test:watch": "jest --watch"
