@@ -3,7 +3,7 @@ import webpack from 'webpack';
 // import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default  {
-  entry: './src/index.js',
+  entry: './src/index',
   devtool: 'inline-source-map',
   output: {
     filename: 'bundle.js',
