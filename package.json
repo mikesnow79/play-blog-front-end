@@ -7,7 +7,8 @@
     "watch": "npm run build -- --watch",
     "build": "webpack",
     "prebuild": "npm run clean-dist",
-    "clean-dist": "rimraf ./dist && mkdir dist",
+    "clean-dist": "npm run remove-dist && mkdir dist",
+    "remove-dist": "rimraf ./dist",
     "test": "jest",
     "test:cover": "npm run test -- --coverage ",
     "test:watch": "jest --watch"
