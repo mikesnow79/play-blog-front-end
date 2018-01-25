@@ -6,7 +6,7 @@
   "scripts": {
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm run start-message",
-    "start": "npm run prebuild && concurrently -k -r -s first \"npm run build:dev\" \"npm run lint:watch\"",
+    "start": "concurrently -k -r -s first \"npm run test:watch\" \"npm run open:src\" \"npm run lint:watch\"",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "prebuild": "npm run lint && npm run test && npm run clean-dist",
