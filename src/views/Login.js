@@ -9,6 +9,13 @@ const styles = {
     padding: '40px'
   }
 };
+/* eslint-disable no-console */
+
+const stuff = fetch('/api-auth/login/').then((things) => {
+  console.log(things);
+});
+console.log(stuff);
+
 
 export default class Login extends React.Component {
   render() {

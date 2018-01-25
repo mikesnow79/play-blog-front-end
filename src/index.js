@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 
 import Login from './views/Login';
-
+import TempHomeView from './views/TempHomeView';
 
 /* eslint-disable no-console */
 
@@ -24,12 +24,12 @@ function component() {
 
 document.body.appendChild(component());
 
-
 ReactDOM.render(<MuiThemeProvider>
   <Router>
     <Row around="xs">
       <Col xs={12} md={11}>
           <Route exact path="/index" component={Login} />
+          <Route exact path="/login" component={TempHomeView} />
         {/*<Route exact path="/app" component={CartoonsDirectory} />*/}
       </Col>
     </Row>
