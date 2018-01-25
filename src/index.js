@@ -1,12 +1,7 @@
 import './tufte.css';
 import './images/jim_brown.jpeg';
-// import React from 'react';
-// import { render } from 'react-dom';
-// import { AppContainer } from 'react-hot-loader';
-// import Counter from './components/Counter';
 
 /* eslint-disable no-console */
-console.log('halp');
 
 function component() {
   let element = document.createElement('div');
@@ -20,9 +15,7 @@ function component() {
 document.body.appendChild(component());
 
 // render(
-//   <AppContainer>
-//
-//   </AppContainer>,
+//   <Counter />,
 //   document.getElementById('main-container')
 // );
 
