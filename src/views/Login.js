@@ -22,7 +22,7 @@ export default class Login extends React.Component {
     return (
       <Paper style={styles.paper}>
         <h2>Login</h2>
-        <Link to="/login"><RaisedButton label="Login" primary /></Link>
+        <Link to="/home"><RaisedButton label="Login" primary /></Link>
       </Paper>
     );
   }

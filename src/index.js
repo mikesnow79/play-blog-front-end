@@ -29,7 +29,7 @@ ReactDOM.render(<MuiThemeProvider>
     <Row around="xs">
       <Col xs={12} md={11}>
           <Route exact path="/index" component={Login} />
-          <Route exact path="/login" component={TempHomeView} />
+          <Route exact path="/home" component={TempHomeView} />
         {/*<Route exact path="/app" component={CartoonsDirectory} />*/}
       </Col>
     </Row>
