@@ -15,7 +15,6 @@ export default class LoginForm extends React.Component {
       username: "",
       password: ""
     };
-    console.log(this.props);
   }
 
   handleSubmit = (vent) => {
