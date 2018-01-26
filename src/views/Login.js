@@ -20,20 +20,18 @@ export default class Login extends React.Component {
   }
 
   handleLoginSuccess = () => {
-    console.log('In handleLoginSuccess');
     // TODO: figure out why this.setState doesnt force the re-render
     this.forceUpdate();
   }
 
   render() {
-    const isAlreadyAuthenticated = this.isAuthenticated();
-    console.log(isAlreadyAuthenticated);
+    let isAlreadyAuthenticated = this.isAuthenticated();
     return (
       <Paper style={styles.paper}>
         { isAlreadyAuthenticated ? <Redirect to={{pathname: '/home'}}/> : (
           <div>
             <h2>Login</h2>
-            <LoginForm onSuccessfullLogin={this.handleLoginSuccess.bind(this)}/>
+            <LoginForm onSuccessfullLogin={this.handleLoginSuccess}/>
           </div>
         )}
       </Paper>
