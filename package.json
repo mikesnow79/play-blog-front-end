@@ -76,6 +76,7 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

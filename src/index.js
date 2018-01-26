@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -24,13 +24,12 @@ function component() {
 
 document.body.appendChild(component());
 
-ReactDOM.render(<MuiThemeProvider>
+render(<MuiThemeProvider>
   <Router>
     <Row around="xs">
       <Col xs={12} md={11}>
-          <Route exact path="/index" component={Login} />
+          <Route exact path="/" component={Login} />
           <Route exact path="/home" component={TempHomeView} />
-        {/*<Route exact path="/app" component={CartoonsDirectory} />*/}
       </Col>
     </Row>
   </Router>
